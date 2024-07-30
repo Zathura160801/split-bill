@@ -15,7 +15,7 @@ function Friend({friend, onSelected, selectedFriend}) {
             )}
 
             {friend.balance === 0 && (
-                <p>Kamu dan {friend.balance} tidak ada hutang</p>
+                <p>Kamu dan {friend.name} tidak ada hutang</p>
             )}
 
             <button className="button"onClick={()=>onSelected(friend)}>{isSelected ? 'Tutup' : 'Pilih'}</button>
