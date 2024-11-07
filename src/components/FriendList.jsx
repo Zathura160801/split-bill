@@ -1,4 +1,5 @@
 import Friend from "./Friend";
+import PropTypes from "prop-types";
 
 export default function FriendList({ friends, onSelected, selectedFriend }) {
   return (
@@ -14,3 +15,9 @@ export default function FriendList({ friends, onSelected, selectedFriend }) {
     </ul>
   );
 }
+
+FriendList.propTypes = {
+  friends: PropTypes.array,
+  onSelected: PropTypes.func,
+  selectedFriend: PropTypes.object,
+};

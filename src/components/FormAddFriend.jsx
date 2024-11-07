@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 export default function FormAddFriend({ onAddFriend }) {
   const [name, setName] = useState("");
@@ -39,3 +40,7 @@ export default function FormAddFriend({ onAddFriend }) {
     </form>
   );
 }
+
+FormAddFriend.propTypes = {
+  onAddFriend: PropTypes.func,
+};

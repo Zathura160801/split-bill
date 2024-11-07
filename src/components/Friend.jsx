@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export default function Friend({ friend, onSelected, selectedFriend }) {
   const isSelected = selectedFriend?.id === friend.id;
 
@@ -26,3 +28,9 @@ export default function Friend({ friend, onSelected, selectedFriend }) {
     </li>
   );
 }
+
+Friend.propTypes = {
+  friend: PropTypes.object,
+  onSelected: PropTypes.func,
+  selectedFriend: PropTypes.object,
+};

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 export default function FormSplitBill({ selectedFriend, onSplitBill }) {
   const [amount, setAmount] = useState("");
@@ -47,3 +48,8 @@ export default function FormSplitBill({ selectedFriend, onSplitBill }) {
     </form>
   );
 }
+
+FormSplitBill.propTypes = {
+  selectedFriend: PropTypes.object,
+  onSplitBill: PropTypes.func,
+};

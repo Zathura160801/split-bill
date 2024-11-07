@@ -3,27 +3,7 @@ import "./App.css";
 import FriendList from "./components/FriendList";
 import FormAddFriend from "./components/FormAddFriend";
 import FormSplitBill from "./components/FormSplitBill";
-
-const initialFriends = [
-  {
-    id: 1183211,
-    name: "John",
-    image: "https://i.pravatar.cc/48?u=1000",
-    balance: -79000,
-  },
-  {
-    id: 933372,
-    name: "Budi",
-    image: "https://i.pravatar.cc/48?u=1001",
-    balance: 20000,
-  },
-  {
-    id: 499476,
-    name: "Caca",
-    image: "https://i.pravatar.cc/48?u=1002",
-    balance: 0,
-  },
-];
+import initialFriends from "./utils/data";
 
 export default function App() {
   const [friends, setFriends] = useState(initialFriends);
